@@ -6,30 +6,40 @@
   <style>
     .map-container {
       position: relative;
-      width: 700px;
-      height: 450px;
+      width: 1000px;
+      margin: auto;
     }
-    .map-container img {
+    .map-image {
       width: 100%;
-      height: auto;
     }
-    .mfp-marker {
+    .device-label {
       position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: red;
-      border-radius: 50%;
-      border: 2px solid white;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid #666;
+      padding: 5px;
+      font-size: 12px;
+      border-radius: 4px;
+      width: 140px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h2>MFP配置マップ</h2>
+  <h1 style="text-align:center;">MFP配置マップ</h1>
   <div class="map-container">
-    <img src="UploadedImage5.jpg" alt="Lab Map" />
-    <!-- MFP配置例 -->
-    <div class="mfp-marker" style="top: 150px; left: 400px;" title="A4-9-6-b: MFP RISE-01"></div>
-    <div class="mfp-marker" style="top: 250px; left: 250px;" title="A4-9-5-c: Titan-P1b"></div>
+    <img src="map.png" alt="Lab Map" class="map-image">
+
+    <!-- ラベル付きMFP配置（座標は仮） -->
+    <div class="device-label" style="top: 50px; left: 100px;">MFP RIS推<br>16-000230<br>Metis-C2c</div>
+    <div class="device-label" style="top: 100px; left: 120px;">MFP RIS推<br>17-000040<br>Metis-C2z</div>
+    <div class="device-label" style="top: 150px; left: 140px;">MFP RIS推<br>16-000229<br>Metis-C2d</div>
+    <div class="device-label" style="top: 200px; left: 160px;">MFP RIS推<br>16-000330<br>Metis-C1 dZ</div>
+    <div class="device-label" style="top: 250px; left: 180px;">MFP RIS推<br>15-000493<br>Metis-C2a</div>
+    <div class="device-label" style="top: 300px; left: 200px;">MFP RIS推<br>RIS#19-0014<br>Metis-MF3c</div>
+    <div class="device-label" style="top: 350px; left: 220px;">MFP RIS推<br>RIS#A4-D009<br>IM C6000</div>
+    <div class="device-label" style="top: 400px; left: 240px;">MFP RIS推<br>RIS#A4-D017<br>Metis-MF4</div>
+    <div class="device-label" style="top: 450px; left: 260px;">MFP RIS推<br>RIS#A4-D004<br>Corona-MF2e</div>
+    <div class="device-label" style="top: 500px; left: 280px;">MFP RIS推<br>RIS#A4-0023<br>Metis-MF4b</div>
   </div>
 </body>
 </html>
